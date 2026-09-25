@@ -1,0 +1,3 @@
+(test
+ (name ers_logic_test)
+ (libraries ers_logic))

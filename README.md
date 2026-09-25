@@ -1,3 +1,20 @@
+# Egyptian Rat Screw (ERS) - HW2
+
+Justin's 2-4 player ERS rules engine is in **[ers/](ers/README.md)**.
+It includes all six slap patterns, face-card challenges, penalty burns, tests,
+and a **[code walkthrough](ers/WALKTHROUGH.md)**.
+
+For Codespaces, choose **New with options** and the **ERS HW2 - OCaml game logic**
+configuration (`.devcontainer/ers/devcontainer.json`). It installs OCaml/Dune and runs the
+tests during setup. From the repository root you can use:
+
+```sh
+dune runtest --root ers
+dune exec --root ers example/walkthrough.exe
+```
+
+The original course starter and its setup instructions are retained below.
+
 # TicTacToe using OCaml
 
 To make a dev-environment, press the green "Code" button, then select "+" next to "Codespaces".  A new Codespace will open.  It currently takes 20-40 minutes to initialize; please be patient.
@@ -44,5 +61,3 @@ python3 -m http.server 8000
 ```
 or to commit the changes and surf to your github.io to see you site:
 https://yoav-zibin.github.io/oxcaml/
-
-
