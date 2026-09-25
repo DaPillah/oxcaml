@@ -1,0 +1,12 @@
+{
+  "name": "ERS HW2 - OCaml game logic",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "remoteUser": "vscode",
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y --no-install-recommends ocaml ocaml-findlib ocaml-dune && if [ -f ers/dune-project ]; then dune build --root ers && dune runtest --root ers; fi",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ocamllabs.ocaml-platform"],
+      "settings": { "ocaml.sandbox": { "kind": "global" } }
+    }
+  }
+}
